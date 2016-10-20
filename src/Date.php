@@ -2,7 +2,7 @@
 
 namespace Edujugon\Core;
 
-class Dates
+class Date
 {
 
     /**
@@ -11,22 +11,20 @@ class Dates
      * @param string $lang
      * @return mixed
      */
-    public static function months($lang = 'es')
+    private function months($lang = 'es')
     {
-        return include(__DIR__ .'/lang/'.$lang.'core.php');
+        return include(__DIR__ .'/lang/'.$lang.'/date.php');
 
     }
 
     /**
-     * Get the months based on language and offset number.
+     * Get the months based on language.
      *
      * if offset is null return all items.
      *
-     * offset
      *If offset is non-negative, the sequence will start at that offset in the array.
      * If offset is negative, the sequence will start that far from the end of the array.
      *
-     * length
      *If length is given and is positive, then the sequence will have up to that many elements in it.
      * If the array is shorter than the length, then only the available array elements will be present.
      * If length is given and is negative then the sequence will stop that many elements from the end of the array.
@@ -37,9 +35,9 @@ class Dates
      * @param null $length
      * @return array|mixed
      */
-    public function getMonths($lang, $offset = NULL, $length = NULL)
+    public static function getMonths($lang, $offset = NULL, $length = NULL)
     {
-        $months = $this->months($lang);
+        $months = self::months($lang);
 
         if(is_null($offset)) return $months;
 
