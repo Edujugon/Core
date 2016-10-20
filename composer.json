@@ -1,0 +1,19 @@
+{
+  "name": "edujugon/core",
+  "description": "Set of useful Classes and Functions.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eduardo Marcos",
+      "email": "edujugon@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Edujugon\\Core\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}
