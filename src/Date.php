@@ -18,7 +18,7 @@ class Date
     }
 
     /**
-     * Get the months based on language.
+     * Get months based on language.
      *
      * if offset is null return all items.
      *

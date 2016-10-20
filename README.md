@@ -18,10 +18,10 @@ Set of useful Classes and Functions.
 
 **Syntax**
 
-`getMonths` method get the months list. You may pass the lang, offset and length through parameters. 
+`getMonths` method gets the months list. You may pass lang, offset and length through parameters. 
 ```php
     /**
-     * Get the months based on language.
+     * Get months based on language.
      *
      * if offset is null return all items.
      *
