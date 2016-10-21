@@ -15,8 +15,9 @@ class Date
     {
         if(!$lang || !file_exists(__DIR__.'/lang/'.$lang)) $lang = 'en';
 
-        return (include __DIR__.'/lang/'.$lang .'/date.php')['months'];
+        $months = include(__DIR__.'/lang/'.$lang .'/date.php');
 
+        return $months['months'];
     }
 
     /**
