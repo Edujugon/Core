@@ -7,22 +7,23 @@ class DateTest extends PHPUnit_Framework_TestCase {
     /**  @test */
     public function get_months()
     {
-        $months = Date::getMonths();
+        $months = Date::Months();
         $this->assertInternalType('array',$months);
     }
 
     /** @test */
     public function get_months_in_spanish()
     {
-        $months = Date::getMonths('es');
+        $months = Date::Months('es');
         $this->assertContains('Enero',$months);
     }
 
     /** @test */
     public function get_two_last_months()
     {
-        $months = Date::getMonths(null,-2);
+        $months = Date::Months(null,-2);
 
         $this->assertEquals(['November','December'],$months);
     }
+
 }

@@ -11,7 +11,7 @@ class Date
      * @param string $lang
      * @return mixed
      */
-    static private function months($lang = NULL)
+    static private function getMonths($lang = NULL)
     {
         if(!$lang || !file_exists(__DIR__.'/lang/'.$lang)) $lang = 'en';
 
@@ -39,13 +39,14 @@ class Date
      * @param null $length
      * @return array|mixed
      */
-    public static function getMonths($lang = NULL, $offset = NULL, $length = NULL)
+    public static function months($lang = NULL, $offset = NULL, $length = NULL)
     {
-        $months = self::months($lang);
+        $months = self::getMonths($lang);
 
         if(is_null($offset)) return $months;
 
         return array_slice($months,$offset,$length);
 
     }
+
 }
