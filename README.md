@@ -5,6 +5,7 @@ Set of useful Classes and Functions.
 ## Available Classes
 
 * [Date](https://github.com/Edujugon/Core#date)
+* [Number](https://github.com/Edujugon/Core#number)
 * More comming soon
 
 
@@ -19,6 +20,7 @@ Set of useful Classes and Functions.
 **Syntax**
 
 `getMonths` method gets the months list. You may pass lang, offset and length through parameters. 
+
 ```php
         /**
          * Get months list.
@@ -40,4 +42,32 @@ Set of useful Classes and Functions.
          * @return array|mixed
          */
         array getMonths($lang = NULL, $offset = NULL, $length = NULL)
+```
+
+### Number
+
+#### Methods
+
+* [myList](https://github.com/Edujugon/Core#mylist)
+
+##### getMonths
+
+**Syntax**
+
+`myList` method gets array of numbers. You must pass a starting number and a length of desired array. 
+
+```php
+        /**
+         * Get Array of numbers.
+         *
+         * If length is negative returns previous numbers
+         * If length is positive returns following numbers
+         * The total items of the array is the starting number parameter plus the length amount.
+         * so if length value is 3 or -3 it will return an array of 4 items.
+         *
+         * @param $start
+         * @param int $length
+         * @return array
+         */
+        array myList($start, $length = 0)
 ```

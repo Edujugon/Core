@@ -10,7 +10,7 @@ class Number
      * Get Array of numbers.
      *
      * If length is negative returns previous numbers
-     * If length is positive returns future numbers
+     * If length is positive returns following numbers
      * The total items of the array is the starting number parameter plus the length amount.
      * so if length value is 3 or -3 it will return an array of 4 items.
      *
