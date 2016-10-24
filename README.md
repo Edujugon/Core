@@ -9,13 +9,13 @@ Set of useful Classes and Functions.
 * More comming soon
 
 
-### Date
+## Date
 
-#### Methods
+### Methods
 
 * [getMonths](https://github.com/Edujugon/Core#getmonths)
 
-##### getMonths
+#### getMonths
 
 **Syntax**
 
@@ -44,13 +44,13 @@ Set of useful Classes and Functions.
         array getMonths($lang = NULL, $offset = NULL, $length = NULL)
 ```
 
-### Number
+## Number
 
-#### Methods
+### Methods
 
 * [myList](https://github.com/Edujugon/Core#mylist)
 
-##### getMonths
+#### getMonths
 
 **Syntax**
 
