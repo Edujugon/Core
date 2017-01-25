@@ -6,6 +6,7 @@ Set of useful Classes and Functions.
 
 * [Date](https://github.com/Edujugon/Core#date)
 * [Number](https://github.com/Edujugon/Core#number)
+* [FindReplace](https://github.com/Edujugon/Core#findreplace)
 * More comming soon
 
 
@@ -50,7 +51,7 @@ Set of useful Classes and Functions.
 
 * [myList](https://github.com/Edujugon/Core#mylist)
 
-#### getMonths
+#### myList
 
 **Syntax**
 
@@ -70,4 +71,52 @@ Set of useful Classes and Functions.
          * @return array
          */
         array myList($start, $length = 0)
+```
+
+
+## FindReplace
+
+### Methods
+
+* [soft](https://github.com/Edujugon/Core#soft)
+* [strict](https://github.com/Edujugon/Core#strict)
+
+#### soft
+
+**Syntax**
+
+`soft` method gets a new string replacing the searched substring for a replacement in a text.  
+
+```php
+        /**
+             * Soft find&replace where do a strtolower either the find text and the text where search.
+             * It's no case sensitive. Foo == foo
+             *
+             * @param $find
+             * @param $replace
+             * @param $text
+             * @return mixed
+             */
+            string static function soft($find, $replace, $text)
+```
+
+#### strict
+
+**Syntax**
+
+`strict` method gets a new string replacing the searched substring for a replacement in a text.
+
+> Case Sensitive
+
+```php
+        /**
+             * Strict find&replace it search for the exact substring($find) inside the text.
+             * It's case sensitive Foo != foo
+             *
+             * @param $find
+             * @param $replace
+             * @param $text
+             * @return mixed
+             */
+            string static function strict($find, $replace, $text)
 ```
